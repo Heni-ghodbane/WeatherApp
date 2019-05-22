@@ -1,0 +1,44 @@
+{{!--here the body page--}}
+<div class="f-table">
+				<div class="container">
+					<div class="f-container">
+						<div class="today prevision">
+							<div class="header">
+								<div class="day" title="Day">{{ forecast.0.day }}</div>
+								<div class="date" title="Date">{{ forecast.0.date }}</div>
+							</div> 
+							<div class="prevision-content">
+								<div class="location" title="Country, city">{{ country }}, {{ city }}</div>
+								<div class="degree">
+									<div class="num" title="Temperature">{{ temp }}<sup>o</sup>C</div>
+									<div class="icon">
+										<img  src="{{{ imgUrl forecast.0.text }}}" title="{{ forecast.0.text }}" width="90">
+									</div>	
+								</div>
+
+								<span title="Humidity"><img src="images/icon-umberella.png" >{{ humidity }}%</span>
+								<span title="Wind speed"><img src="images/icon-wind.png" >{{ speed }}km/h</span>
+								<span title="Wind direction"><img src="images/icon-compass.png" >{{ direction }}<sup>o</sup></span>
+							</div>
+						</div>
+
+                    {{# each forecast}}
+						<div class="prevision">
+							<div class="header">
+								<div class="day" title="Date">{{ this.day }}, {{{ dateFormate this.date }}}</div>
+ 							</div> 
+							<div class="prevision-content">
+								<div class="icon">
+									<img src="{{{ imgUrl this.text }}}" title="{{ this.text }}" width="48">
+								</div>
+								<div class="degree" title="High degree">{{ this.high }}<sup>o</sup>C</div>
+								<small title="Low degree">{{ this.low }}<sup>o</sup></small>
+							</div>
+						</div>
+                    {{/each}}
+					</div>
+				</div>
+			</div>
+
+
+

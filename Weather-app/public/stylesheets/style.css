@@ -1,0 +1,234 @@
+/*here you can add the css code*/
+
+html {
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+
+b,
+strong {
+  font-weight: bold;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  color: #bfc1c8;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 20px;
+  line-height: normal;
+}
+
+.f-container {
+  width: 100%;
+  background: #323544;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.f-container .prevision {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.f-container .prevision:nth-child(even) {
+  background-color: #262936;
+}
+
+@media screen and (max-width: 990px) {
+  .f-container .prevision {
+    display: block;
+    width: 33.33%;
+    float: left;
+  }
+}
+
+.f-container .prevision.today {
+  width: 420px;
+}
+
+.f-container .prevision.today .header {
+  *zoom: 1;
+}
+
+.f-container .prevision.today .header:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+
+.f-container .prevision.today .header .day {
+  float: left;
+}
+
+.f-container .prevision.today .header .date {
+  float: right;
+}
+
+.f-container .prevision.today .content {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.f-container .prevision.today .location {
+  font-size: 18px;
+  /*font-size: 1.2857142857em;
+         font-weight: 400;*/
+  font-weight: bold;
+}
+
+.f-container .prevision.today .degree .num,
+.f-container .prevision.today .degree .icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.f-container .prevision.today .degree .num {
+  font-size: 90px;
+  font-size: 6.4285714286rem;
+  margin-right: 30px;
+}
+
+.f-container .prevision.today span {
+  margin-right: 20px;
+}
+
+.f-container .prevision.today span img {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 990px) {
+  .f-container .prevision.today {
+    display: block;
+    width: 100%;
+  }
+}
+
+.f-container .prevision .header {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.f-container .prevision .icon {
+  height: 50px;
+}
+
+.f-container .prevision .prevision-content {
+  padding: 50px 20px 10px;
+  text-align: center;
+}
+
+.f-container .prevision .prevision-content .icon {
+  margin-bottom: 20px;
+}
+
+.f-container .prevision .prevision-content .degree {
+  font-size: 24px;
+  font-size: 1.7142857143em;
+  color: white;
+  font-weight: 700;
+}
+
+.f-container .prevision .prevision-content small {
+  font-size: 16px;
+  font-size: 1.1428571429em;
+}
